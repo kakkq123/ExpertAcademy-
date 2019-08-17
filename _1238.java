@@ -55,11 +55,10 @@ public class _1238 {
 			int start = kb.nextInt();
 
 			ArrayList<Node> n = new ArrayList<Node>();
-			// ÀÔ·Â
+			
 			for (int j = 0; j < num / 2; j++)
-				n.add(new Node(kb.nextInt(), kb.nextInt())); // from & to
+				n.add(new Node(kb.nextInt(), kb.nextInt())); 
 
-			// Ãâ·Â
 			System.out.println("#" + test + " " + search(start, n));
 
 		}
