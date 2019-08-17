@@ -23,7 +23,7 @@ public class _1238 {
 		int max = 0, max_len = 1, len = 1;
 		Queue<Integer> q = new ArrayDeque<Integer>();
 		q.offer(start);
-		visit[test][start] = true; // ¹æ¹®
+		visit[test][start] = true; // 
 		while (!q.isEmpty()) {
 			int qsize = q.size();
 			len++;
@@ -32,7 +32,7 @@ public class _1238 {
 				for (int i = 0; i < n.size(); i++) {
 					if (n.get(i).a == start && !visit[test][n.get(i).b]) {
 						q.offer(n.get(i).b);
-						visit[test][n.get(i).b] = true; // ¹æ¹®
+						visit[test][n.get(i).b] = true; // ë°©ë¬¸
 
 					}
 				} // for i
@@ -55,11 +55,11 @@ public class _1238 {
 			int start = kb.nextInt();
 
 			ArrayList<Node> n = new ArrayList<Node>();
-			// ÀÔ·Â
+			// Ã€Ã”Â·Ã‚
 			for (int j = 0; j < num / 2; j++)
 				n.add(new Node(kb.nextInt(), kb.nextInt())); // from & to
 
-			// Ãâ·Â
+			// ÃƒÃ¢Â·Ã‚
 			System.out.println("#" + test + " " + search(start, n));
 
 		}
