@@ -32,7 +32,7 @@ public class _1258 {
 	}
 	public static void solve(int row, int col, int n) {
 		int r=1, c=1;
-		arr[row][col]=0; //방문
+		arr[row][col]=0; 
 		int tmp=col;
 		
 		while(arr[row][col+1]>0 && col+1<=n) {
@@ -59,7 +59,6 @@ public class _1258 {
 			arr = new int[n + 1][n + 1];
 			m = new PriorityQueue<Matrix>();
 
-			// 행렬 입력
 			for (int row = 1; row <= n; row++)
 				for (int col = 1; col <= n; col++)
 					arr[row][col] = kb.nextInt();
