@@ -65,7 +65,6 @@ public class _2112 {
 		int[] copy = new int[w];
 		for (int r = row; r < d; r++) {
 			copy = Arrays.copyOf(film[r], w);
-			// 약품 투입 O
 			int c = 0;
 			for (int i = 0; i < w; i++) {
 				film[r][i] = c;
@@ -77,7 +76,6 @@ public class _2112 {
 				film[r][i] = c;
 			}
 			dfs(r + 1, count + 1);
-			// 약품 투입 X
 			film[r] = copy;
 		}
 
