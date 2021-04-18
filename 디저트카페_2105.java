@@ -13,7 +13,7 @@ public class Solution {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer st;
 		int Test = Integer.parseInt(br.readLine());
-		for (int test = 0; test < Test; test++) {
+		for (int test = 1; test <= Test; test++) {
 			N = Integer.parseInt(br.readLine());
 			a = new int[N][N];
 			//입력
